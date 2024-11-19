@@ -1,0 +1,13 @@
+criação do banco mysql
+
+CREATE DATABASE record_db;
+
+USE record_db;
+
+CREATE TABLE records (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    file_path VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+http://localhost/audio/index.php
